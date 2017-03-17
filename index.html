@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Shiyu Zhuang</title>
+
+		<link href="css/reset.css" rel="stylesheet">
+		<link href="css/grid.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Lato|Open+Sans|Poiret+One" rel="stylesheet">		
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+		<script src="js/modernizr-custom.js"></script>
+
+	</head>
+
+	<body>
+		<header class="full-width" menu>
+			<nav id="nav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<ul>
+					<li><a  href="index.html">HOME</a></li>
+					<li><a href="project.html">PROJECTS</a></li>
+					<li><a href="#">ABOUT ME</a></li>
+					<li><a href="#">CONTACT</a></li>
+				</ul>
+			</nav>
+			<span id="burger" onclick="openNav()">&#9776;</span>
+		</header>		
+		<div class="parallax">
+			<div class="h-1"></div>
+			<div class="h-2"></div>
+			<div class="h-3"></div>
+		</div>
+		<div class="wrapper">
+			<div class="row" id="intro">
+				<div class="col col-1" >
+				</div>
+				<div class="col col-5" >
+					<h2>A little about..</h2>
+					<h1>SHIYU ZHUANG</h1>
+					<p style="font-weight: bold; color: rgb(34, 181, 115);">Web Design | Photography | Videography</p>
+					<br>
+					<p>Pellentesque rhoncus felis ac leo eleifend, quis elementum risus ullamcorper. Etiam elit purus, iaculis sed elit non, vestibulum dapibus ligula. </p>
+					<br>
+					<p>Duis quis facilisis sapien, non vehicula mi. Pellentesque pretium venenatis eros in aliquet. Nulla facilisi. Nulla condimentum sem sit amet mi rhoncus accumsan.</p>
+				</div>
+				<div class="col col-1" >
+					<p> </p>
+				</div>
+				<div class="col col-4">
+					<a href="#"><img class="shiyu" src="img/shiyu.jpg" alt="shiyu"></a>
+				</div>
+			</div>
+		</div>
+		<div class="full-width">
+			<div class="skill">
+				<div class="knowledge">
+					<h2 style="color: black">HTML</h2>
+					<h2>CSS</h2>
+					<h2 style="color: black">JAVA SCRIPT</h2>
+					<h2>PHP</h2>
+					<h2 style="color: black">PHOTOGRAPHY</h2>
+					<h2>VIDEOGRAPHY</h2>
+				</div>
+				<div class="software">
+					<h2 style="color: black">ADOBE CREATIVE CLOUD</h2>
+						<ul>
+							<li><h3>- ADOBE PHOTOSHOP</h3></li>
+							<li><h3>- ADOBE ILLUSTRATOR</h3></li>
+							<li><h3>- ADOBE LIGHTROOM</h3></li>
+							<li><h3>- ADOBE PREMIERE</h3></li>
+							<li><h3>- ADOBE BRIDGE</h3></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper" id="project">
+			<div class="row" id="p1">
+				<div class="col col-1"></div>
+		   		<div class="hovereffect" class="col col-2">
+		      		<img class="project-img" src="img/banff1.png" alt="Project A">
+		           	<div class="overlay">
+						<p class="info"><a href="#">WEB DESIGN</a></p>
+					</div>
+				</div>
+				<div class="hovereffect" class="col col-2">
+		      		<img class="project-img" src="img/banff2.png" alt="Project B">
+		           	<div class="overlay">
+						<p class="info"><a href="#">GRAPHIC DESIGN</a></p>
+					</div>
+				</div>
+				<div class="col col-1"></div>
+			</div>
+			<div class="row" id="p2">
+				<div class="col col-1"></div>
+				<div class="hovereffect" class="col col-2">
+		      		<img class="project-img" src="img/banff3.png" alt="Project C">
+		           	<div class="overlay">
+						<p class="info"><a href="#">PHOTOGRAPHY</a></p>
+					</div>
+				</div>
+				<div class="hovereffect" class="col col-2">
+		      		<img class="project-img" src="img/banff1.png" alt="Project D">
+		      		<div class="overlay">
+						<p class="info"><a href="#">VIDEOGRAPHY</a></p>
+					</div>
+				</div>
+				<div class="col col-1"></div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="bye"></div>
+			<a href="mailto:shiyu.shirley.zhuang@gmail.com"><p>EMAIL ME</p></a>
+		</footer>
+	
+	<script type="text/javascript">
+	function openNav() {
+  	  document.getElementById("nav").style.width = "100%";
+		}
+	function closeNav() {
+    	document.getElementById("nav").style.width = "0";
+	}
+	</script>
+
+	</body>
+</html>

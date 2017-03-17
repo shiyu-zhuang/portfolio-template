@@ -1,0 +1,255 @@
+/*General Settings - body*/
+body, html {
+  height: 100%;
+  color: black;
+  font-family : sans-serif;
+  line-height: 200%;
+}
+
+.full-width {
+  text-align: justify;
+}
+
+body {
+  position: relative;
+  -webkit-animation-name: body; 
+  -webkit-animation-duration: 1.5s; 
+  animation-name: body;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes body {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes body {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*General Settings - title fonts*/
+h1 {
+  font-family: 'Lato', cursive;
+  font-weight: 700;
+  font-size: 2em;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+h3, a {
+  font-family: 'lato', cursive;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+/*nav bar*/
+nav {
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 4.5em;
+  z-index: 9;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  color: white;
+  float: right;
+  margin: 0;
+  width: 100%;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+}
+
+nav ul li {
+  padding: 1em;
+  width: 100%;
+}
+
+nav ul li:hover {
+  background: rgba(149,149,149,0.3);
+}
+
+nav ul li a {
+  display: block;
+  padding: 1.5em 0;
+  font-size: 1.5em;
+  text-decoration: none;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav a:link, nav a:visited {
+  color: white;
+}
+
+nav a:hover, nav a:active {
+  color: white;
+}
+
+/*sidenav & closebtn settings*/
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.closebtn {
+  font-size: 4em;
+  text-decoration: none;
+}
+
+#burger {
+  font-size: 2.5em; 
+  width: 100%;
+  background-color: black;
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: white;
+  padding: 0.5em;
+  z-index: 9999999;
+}
+
+.body {
+  background: black;
+  height: 100%;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+h3 a:link , h3 a:visited {
+  color: #22b573;
+
+}
+
+h3 a:hover , h3 a:active {
+  background-color: #959595;
+  color: white;
+}
+
+.email {
+  margin-top: 150px;
+  background: rgba(255, 255, 255, 1);
+  height: 25vh;
+  box-sizing: border-box;
+  padding: 60px 30px;
+}
+
+.social {
+  margin-top: 20px;
+  color: black;
+  background: rgba(255, 255, 255, 1);
+  height: 25vh;
+  box-sizing: border-box;
+  padding: 60px 20px 60px 180px;
+}
+
+.social a {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.social a:link, .social a:visited {
+  color: #22b573;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+}
+
+.social a:hover, .social a:active {
+  color: white;
+  background: #959595;
+} 
+
+li {
+  font-size: 1.4em;
+  padding-left: 100px;
+  box-sizing: border-box;
+}
+
+/*footer*/
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  border-top: 0.6em solid white;
+  padding: 0.5em 0;
+  background: #22b573;
+}
+footer a {
+  color: black;
+  text-align: center;
+  font-size: 1.2em;
+  text-decoration: none;
+  z-index: 9;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+footer a:hover {
+  font-size: 1.1em;
+}
+
+@media only screen and (max-width: 800px) {
+  .social {
+  padding: 60px 20px 60px 110px;
+}
+  li {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .email {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .email {
+    width: 100%;
+  }
+  .email {
+    margin-top: 120px;
+  }
+  .social {
+    margin-top: 10px;
+}
+  .none {
+    display: none;
+  }
+}

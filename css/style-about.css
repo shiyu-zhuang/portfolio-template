@@ -1,0 +1,312 @@
+/*General Settings - body*/
+body, html {
+  height: 100%;
+  color: black;
+  font-family : sans-serif;
+  line-height: 150%;
+}
+
+.full-width {
+  text-align: justify;
+}
+
+body {
+  position: relative;
+  -webkit-animation-name: body; 
+  -webkit-animation-duration: 1.5s; 
+  animation-name: body;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+}
+
+@-webkit-keyframes body {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes body {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+/*General Settings - title fonts*/
+h1 {
+  font-family: 'Poiret One', cursive;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+h2, h3, a {
+  font-family: 'Poiret One', cursive;
+  font-weight: 400;
+}
+
+/*nav bar*/
+nav {
+  text-align: center;
+  margin: 0;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -o-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 4.5em;
+  z-index: 9;
+}
+
+nav ul {
+  list-style: none;
+  overflow: hidden;
+  color: white;
+  float: right;
+  margin: 0;
+  width: 100%;
+  -webkit-transition: max-height 0.4s;
+  -ms-transition: max-height 0.4s;
+  -moz-transition: max-height 0.4s;
+  transition: max-height 0.4s;
+}
+
+nav ul li {
+  padding: 1em;
+  width: 100%;
+}
+
+nav ul li:hover {
+  background: rgba(149,149,149,0.3);
+}
+
+nav ul li a {
+  display: block;
+  padding: 1.5em 0;
+  font-size: 1.5em;
+  text-decoration: none;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+nav a:link, nav a:visited {
+  color: white;
+}
+
+nav a:hover, nav a:active {
+  color: white;
+}
+
+/*sidenav & closebtn settings*/
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.closebtn {
+  font-size: 4em;
+  text-decoration: none;
+}
+
+#burger {
+  font-size: 2.5em; 
+  width: 100%;
+  background-color: black;
+  cursor: pointer;
+  position: fixed;
+  left: 0;
+  top: 0;
+  color: white;
+  padding: 0.5em;
+  z-index: 9999999;
+}
+.col {
+  margin-bottom: 0;
+}
+
+.about-me {
+  background-image: url('../img/about-me.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 1);
+  height: 160vh;
+}
+
+.left {
+  margin-top: 200px;
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  background: rgb(34, 181, 115);
+  padding: 10px 20px;
+  line-height: .6em;
+}
+
+.hey {
+  font-family: 'Lato', sans-serif;
+}
+
+.right {
+  margin-top: 150px;
+  font-weight: bold;
+  color: white;
+  line-height: 2.4em;
+}
+
+.right h3 {
+  font-size: 2em;
+  font-family: 'Lato', sans-serif;
+}
+
+.right h4 {
+  font-size: 1.6em;
+  font-family: 'Poiret One', cursive;
+  font-style: italic;
+}
+
+.right h5 {
+  font-size: 1.4em;
+}
+
+.right h6 {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.right p {
+  font-size: 1em;
+}
+
+.highlight {
+  color: black;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 10px;
+}
+
+.contact a, .pre-project a {
+  margin-top: 35px;
+  padding: 5px 170px 5px 0;
+}
+
+.contact a:link, .contact a:visited {
+  color: rgb(34, 181, 115);
+  background: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover, .contact a:active {
+  color: white;
+  background: rgb(34, 181, 115);
+}
+
+.pre-project a:link, .pre-project a:visited {
+  color: rgb(34, 181, 115);
+  background: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.pre-project a:hover, .pre-project a:active {
+  color: white;
+  background: rgb(34, 181, 115);
+}
+
+/*footer*/
+footer {
+  width: 100%;
+}
+
+footer p {
+  border-top: 0.6em solid white;
+  padding: 0.5em 0;
+  background: #22b573;
+}
+footer a {
+  color: black;
+  text-align: center;
+  font-size: 1.2em;
+  text-decoration: none;
+  z-index: 9;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+footer a:hover {
+  font-size: 1.1em;
+}
+
+@media only screen and (max-width: 760px) {
+  .about-me {
+     height: 175vh;
+  }
+  .right h5 {
+    font-size: 1.2em;
+  }
+
+  .highlight {
+  color: black;
+  background: rgba(255, 255, 255, 0.7);
+  }
+
+  .dos {
+    font-size: 1em;
+    font-weight: normal;
+  }
+
+}
+
+@media only screen and (max-width: 520px) {
+ .about-me {
+     height: 180vh;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .left {
+    width: 400px;
+    padding: 0;
+  }
+
+  .right {
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+  .right h3 {
+  font-size: 1.8em;
+  font-family: 'Lato', sans-serif;
+  }
+
+  .right h4 {
+  font-size: 1.4em;
+  font-family: 'Poiret One', cursive;
+  font-style: italic;
+  }
+
+  footer {
+  width: 100%;
+  height: auto;
+  }
+
+  footer .bye {
+    height: 60vh;
+  }
+}
